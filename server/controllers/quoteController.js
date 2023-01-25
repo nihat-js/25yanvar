@@ -1,7 +1,7 @@
 const Quote = require('../models/quote')
 
 async function get (req,res){
-  const result = await Quote.findOne({})
+  const result = await Quote.find({})
   if (!result){
     res.status(404).json({message: "Quote not found" })
     return false
@@ -27,6 +27,7 @@ async function getById (req,res){
 }
   
 async function add (req,res ) {
+  console.log('ff')
   if (!req.body.text ||!req.body.author ){
     res.status(404).json({message: " Not found "})
     return false
