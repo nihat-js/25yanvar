@@ -1,23 +1,18 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import './index.scss'
+
+
+import imagePortfolio1 from '../../assets/img/portfolio-1.jpg'
+import Nav from '../../components/Nav'
+
 export default function Index() {
   return (
     <div className='home-page'>
-      <nav>
-        <h2 className="brand"> <Link to='/'> Studio  </Link> </h2>
-        <ul className="links">
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/'> Crud  </Link></li>
-          <li><Link to='/'> Services </Link></li>
-          <li> <Link to='/about'>  Portfolio </Link>  </li>
-          <li> <Link to='/about'>  About </Link>  </li>
-          <li> <Link to='/about'>  Team </Link>  </li>
-          <li> <Link to='/about'>  Contact </Link>  </li>
-        </ul>
-      </nav>
+        <Nav/>
       <section className='hero'>
-        <h3 className="title"> Welcome to our studio  </h3>
-        <h1 className="subtitle"> IT'S NICE TO MEET YOU </h1>
+        <h3 className="subtitle"> Welcome to our studio  </h3>
+        <h1 className="title"> IT'S NICE TO MEET YOU </h1>
         <button> Tell me more </button>
       </section>
 
@@ -43,22 +38,22 @@ export default function Index() {
           <p className="subtitle"> Lorem ipsum dolor sit amet consectetur. </p>
           <div className="row">
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
             <div className="box">
-              <img src="" alt="" />
+              <img src={imagePortfolio1} alt="" />
             </div>
           </div>
         </div>

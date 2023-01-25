@@ -1,5 +1,7 @@
+import '../../assets/css/tailwind.css'
 import { useState, useEffect } from "react"
 import axios from "axios"
+import Nav from '../../components/Nav'
 
 const URL = "http://localhost:8080/quote"
 
@@ -33,6 +35,7 @@ export default function Index() {
 
   return (
     <div>
+      <Nav/>
       <h2 className="title bg-green-800 text-white py-6 text-center text-2xl font-semibol "> Crud Management </h2>
 
       <table style={{width : '600px'}}>

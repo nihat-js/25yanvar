@@ -1,0 +1,79 @@
+.container{
+  max-width: 1200px;
+  margin:  0 auto;
+}
+
+.home-page {
+ 
+
+  .hero {
+    height: 600px;
+    background-image: url('../../assets/img/bg-hero.jpg');
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    .subtitle {
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 50px;
+      margin-bottom: 8px;
+    }
+    button {
+      color : #fff;
+      background-color: #337ab7 ;
+      padding: 10px 6px;
+      border-radius: 6px;
+    }
+    button:hover{
+      background-color: hsl(208, 36%, 66%);
+    }
+
+  }
+
+  section.portfolio{
+    background-color: #f2dede;
+    padding: 50px 0 ;
+    .container{
+      .title{
+        color : #3680c1;
+        font-size: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .subtitle{
+        color : #777;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        .box {
+          border : 10px solid #fff;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  section.team {
+    .container{
+      .title{
+
+      }
+      .subtitle{
+
+      }
+    }
+  }
+
+}
